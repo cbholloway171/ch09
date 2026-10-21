@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Code Corner</title>
+  <meta name="description" content="Chapter 9 project: a WordPress-style homepage with a heading, image, list, button, menu, widgets and a plug-in style feature.">
+  <link rel="icon" type="image/svg+xml" href="images/site-icon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header: site title, tagline, primary menu -->
+  <header class="site-header">
+    <div class="wrap">
+      <div>
+        <a class="site-title" href="index.html">
+          <img src="images/site-icon.svg" alt="" width="32" height="32" style="vertical-align: -6px; margin-right: 8px;">Code Corner
+        </a>
+        <p class="tagline">Learning to build for the web, one page at a time</p>
+      </div>
+      <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+    <div class="wrap">
+      <nav aria-label="Primary menu">
+        <ul class="menu">
+          <li><a class="current" href="index.html" aria-current="page">Home</a></li>
+          <li><a href="getting-started-with-wordpress.html">Getting Started with WordPress</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap layout">
+
+    <!-- Main content: the "Home" page -->
+    <main>
+      <h1>Chapter 9 Project: My First WordPress Site</h1>
+      <p class="byline"><strong>Author:</strong> Chandler Holloway</p>
+      <p class="byline"><strong>Date:</strong> <time datetime="2026-10-21">October 21, 2026</time></p>
+
+      <figure>
+        <img src="images/hero.svg" alt="Illustration of a laptop showing a website layout with a header, an image block and a list, surrounded by code brackets">
+        <figcaption>A simple layout: header, content area and sidebar.</figcaption>
+      </figure>
+
+      <h2>Why WordPress?</h2>
+      <ul>
+        <li><strong>Free and open source:</strong> anyone can download it, use it and learn from it.</li>
+        <li><strong>Themes and plug-ins:</strong> change the look or add features without writing everything from scratch.</li>
+        <li><strong>Block editor:</strong> build pages with headings, images, lists and buttons by dragging blocks into place.</li>
+        <li><strong>Huge community:</strong> tutorials, forums and documentation are easy to find.</li>
+      </ul>
+
+      <p>Ready to see what a first post looks like?</p>
+      <p><a class="button" href="getting-started-with-wordpress.html">Read the first post</a></p>
+
+      <!-- Step 17: Site Health improvement note, shown as a comment -->
+      <section class="comments" aria-labelledby="comments-title">
+        <h2 id="comments-title">Comments</h2>
+        <div class="comment">
+          <p class="who">Chandler Holloway</p>
+          <p class="when">October 21, 2026</p>
+          <p>
+            <strong>Site Health suggestion:</strong> Site Health recommended adding a caching layer
+            (a page cache or a persistent object cache). Caching saves a copy of each page so the server
+            does not rebuild it on every visit, which makes the site load faster and use fewer resources.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Sidebar widgets -->
+    <aside aria-label="Sidebar">
+      <section class="widget">
+        <h2>About This Site</h2>
+        <p>A class project built to practice setting up a site, choosing a theme, and adding content blocks.</p>
+      </section>
+
+      <section class="widget">
+        <h2>Recent Posts</h2>
+        <ul>
+          <li><a href="getting-started-with-wordpress.html">Getting Started with WordPress</a></li>
+        </ul>
+      </section>
+
+      <section class="widget">
+        <h2>Site Plug-ins</h2>
+        <ul>
+          <li>Dark mode switch (top right)</li>
+          <li>Back-to-top button (appears when you scroll)</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <!-- Footer widget area -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <h2>Code Corner</h2>
+        <p>Chapter 9 project by Chandler Holloway.</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <p><a href="index.html">Home</a> · <a href="getting-started-with-wordpress.html">First post</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" type="button" aria-label="Back to top">&uarr;</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
